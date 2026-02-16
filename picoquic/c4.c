@@ -1072,7 +1072,7 @@ void c4_notify(
                         && c4_state->nb_eras_no_increase > 1
                         && c4_state->push_rate_old >= c4_state->nominal_rate) {
 
-                        c4_exit_initial(path_x, c4_state, c4_congestion_ecn, current_time);
+                        c4_exit_initial(path_x, c4_state, picoquic_congestion_notification_ecn_ec, current_time);
                     }
                 }
                 else {
